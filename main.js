@@ -18,7 +18,9 @@ function AdicionaLinha () {
 
     if(Contatos.includes(InputNome.value)){
         alert(`O Contato ${InputNome.value} ja foi Cadastrado`)
-    }else{
+    }else if(Telefones.includes(InputTel.value)) {
+        alert(`O Numero ${InputTel.value} ja foi Cadastrado`)
+    } else{
         Telefones.push(InputTel.value)
         Contatos.push(InputNome.value)
         
