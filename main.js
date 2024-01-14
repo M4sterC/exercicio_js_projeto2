@@ -19,9 +19,9 @@ function AdicionaLinha () {
     if(Contatos.includes(InputNome.value)){
         alert(`O Contato ${InputNome.value} ja foi Cadastrado`)
     }else{
-        Contatos.push(InputNome.value)
         Telefones.push(InputTel.value)
-
+        Contatos.push(InputNome.value)
+        
         const TelFormatado = InputTel.value.split('')
     
         let linha = '<tr>';
@@ -39,8 +39,9 @@ function AtualizaTabela() {
 }
 function rodape(){
     const Cadastros = Contatos.length
-    const Ultimo = Contatos.pop()
+    const Ultimo = Contatos.length -1
+    const Ultimo1 = Contatos[Ultimo]
 
     document.getElementById('Clientes').innerHTML = `Voce tem ${Cadastros} Contato(s) salvo(s)`
-    document.getElementById('UltimoCadastro').innerHTML = `${Ultimo} foi o ultimo contato cadastrado`
+    document.getElementById('UltimoCadastro').innerHTML = `${Ultimo1} foi o ultimo contato cadastrado`
 }
