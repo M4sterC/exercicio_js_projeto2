@@ -15,10 +15,8 @@ form.addEventListener("submit",function(e){
 function AdicionaLinha () {
     const InputNome = document.getElementById('Nome')
     const InputTel = document.getElementById('Telefone')
-
-    if(Contatos.includes(InputNome.value)){
-        alert(`O Contato ${InputNome.value} ja foi Cadastrado`)
-    }else if(Telefones.includes(InputTel.value)) {
+    
+    if(Telefones.includes(InputTel.value)) {
         alert(`O Numero ${InputTel.value} ja foi Cadastrado`)
     } else{
         Telefones.push(InputTel.value)
