@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="form">
+            <div class="label">
+                <label id="InputNome" for="#Nome"><br>Nome do Contato</label>
+                <label id="InputTel" for="#Telefone">Telefone com DDD <br>(Somente Numeros)</label>
+            </div>
+            <div class="form">
+                <input id= "Nome" type="text" required placeholder="Nome do Contato" />
+                <input id= "Telefone"  type="tel" required placeholder="Ex: 9999999999" pattern="[0-9]{2}[0-9]{5}[0-9]{4}"/>
+                <button type="submit">Cadastrar+</button>
+            </div>
+        </form>
+        <table cellspacing = '0'>
+            <thead>
+                <h1>Contatos</h1>
+                <tr>
+                    <th>Nome</th>
+                    <th>telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="Clientes">---</td>
+                    <td id="UltimoCadastro">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    display: block;
+    align-items: center;
+    margin-bottom: 40px;
+}
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #e7e7e7;
+    padding-top: 100px;
+}
+.form {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+}
+.form input {
+    margin-right: 24px;
+    padding: 8px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+form #Telefone,
+#Nome {
+    width: 230px;
+}
+.form button {
+    padding: 8px;
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form button:hover {
+    background-color: rgb(34, 87, 34);
+}
+
+table {
+    width: 70%;
+}
+table th {
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bolder
+}
+table td {
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.label {
+    font-weight: bolder;
+    margin-bottom: 12px;
+    display: flex;
+    width: 100%;
+}
+.label #InputTel {
+    margin-left: 135px;
+}
+tfoot{
+    background-color: #c0bebe;
+    font-weight: bolder;
+}
